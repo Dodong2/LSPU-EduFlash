@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "montserrat-bold";
+  font-weight: 700;
+  line-height: 24.38px;
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+/* Fonts */
+@font-face {
+  font-family: "lora";
+  font-weight: 100;
+  line-height: 24.38px;
+  src: url("../fonts/fonts.txt");
+}
+
+/* colors */
+:root {
+  --light-mode-BG: #ffffff;
+  --dark-mode-BG: #06293d;
+  --div-dark: #06283d;
+  --blur-text: #d0d0d0;
+  --card-btns-color: #256d85;
+  /* --red: red; */
+  --white: #FFFFFF;
+}
+/* destroy Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100svh;
+}
+/***** main-container *****/
+.main-container {
+  margin: 0 auto;
+  width: 1140px;
+  border: 1px solid var(--red);
+}
+
+/*--------------------(  for Mobile  )--------------------*/
+@media only screen and (max-width: 767px) {
+  .main-container {
+    width: calc(100% - 40px);
+  }
+  /***** Home Components CSS *****/
+  .home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+  }
+
+  .txt-left {
+    font-family: "montserrat-bold";
+    flex-wrap: wrap;
+  }
+  .txt-left span:nth-child(1) {
+    color: var(--blur-text);
+    font-size: .8em;
+  }
+  .txt-left span:nth-child(3) {
+    line-height: 24.38px;
+    bottom: 0;
+    display: flex;
+  }
+  /***** Home Content 1 CSS *****/
+  .box-content1 {
+    background-color: var(--div-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+
+  .content1-txt {
+    position: relative;
+  }
+  .content1-txt div {
+    position: absolute;
+    top: -30px;
+    left: 6rem;
+    transform: translate(-50%, -50%);
+  }
+  .content1-txt div h1 {
+    font-family: 'montserrat-bold';
+    font-size: clamp(1.1rem, 2.5vw, 3rem);
+    white-space: nowrap;
+    color: var(--white);
+  }
+  .content1-txt div button {
+    position: absolute;
+    top: 5.2rem;
+    padding: 7px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--card-btns-color);
+    color: var(--white);
+    font-family:'lora';
+    font-size: .9em;
+  }
+  .content1-img img {
+    width: 200px;
+  }
+
+
+
+
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+}
