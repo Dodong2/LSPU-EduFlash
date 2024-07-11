@@ -6,6 +6,7 @@ import React from "react";
 import  MainContainer from '../components/maincontainer/container'
 import HomeHeader from "../components/HomeComponents/homeHeader";
 import HomeContent1 from "../components/HomeComponents/homeContent1";
+import HomeContent2 from "../components/HomeComponents/homeContent2";
 const Home = () => {
   return(
     <>
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeHeader />
       <br/>
       <HomeContent1 />
+      <HomeContent2 />
       </>} />
     </>
   );
