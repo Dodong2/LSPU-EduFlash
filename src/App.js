@@ -10,6 +10,9 @@ import Stream from "./service-pages/Stream";
 // Main Pages
 import Home from "./pages/home";
 import "./assets/css/app.css";
+import "./assets/css/color.css"
+import "./assets/css/default.css"
+import "./assets/css/media.css"
 
 const App = () => {
   return (

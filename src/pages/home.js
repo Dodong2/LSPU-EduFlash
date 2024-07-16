@@ -1,23 +1,18 @@
 import React from "react";
+import Header from "../components/home-components/header";
+import Introduction from "../components/home-components/introduction";
+import Categories from "../components/home-components/categories";
 
-// importing components from api service
-// import { SampleFunction } from "../components/config/api-service";
-
-import  MainContainer from '../components/maincontainer/container'
-import HomeHeader from "../components/HomeComponents/homeHeader";
-import HomeContent1 from "../components/HomeComponents/homeContent1";
-import HomeContent2 from "../components/HomeComponents/homeContent2";
 const Home = () => {
-  return(
+  return (
     <>
-    <MainContainer container={<>
-      <HomeHeader />
-      <br/>
-      <HomeContent1 />
-      <HomeContent2 />
-      </>} />
+      <div className="main-container">
+        <Header />
+        <Introduction />
+        <Categories/>
+      </div>
     </>
   );
-}
+};
 
 export default Home;
